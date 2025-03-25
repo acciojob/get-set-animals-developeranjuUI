@@ -2,7 +2,7 @@
 class Animal {
 	private species: string;
 	constructor(species: string){
-		this.species;
+		this.species = species;
 	}
 	get species(): string{
 		return this.species;
@@ -13,14 +13,14 @@ class Animal {
 }
 
 class Dog extends Animal {
-	purr(): void{
-		console.log("purr");
+	bark(): void{
+		console.log("woof");
 	}
 }
 
 class Cat extends Animal {
-	bark(): void{
-		console.log("woof");
+	purr(): void{
+		console.log("purr");
 	}
 }
 const myCat = new Cat("Siamese");
